@@ -188,7 +188,7 @@ main{
 /* responsive styles */
 
 @media screen and (max-width: 600px) {
-  header {
+  header,main {
     padding: 1.2rem;
   }
 
@@ -209,7 +209,7 @@ main{
   }
 
 
-  .input-container{
+  .input-container,.popular-tours{
     flex-direction: column;
     justify-content: center;
   }
@@ -223,6 +223,13 @@ main{
   }
   .input-container input{
     width: 85%;
+  }
+
+  .popular-tours img{
+    width: 100%;
+  }
+  .popular-tours .btn{
+    margin-top: 0.5rem;
   }
 
 }
