@@ -13,7 +13,7 @@
   display: flex;
 }
 .primary-text {
-color: rgba(19, 19, 24, 0.70);
+color: #5A5A5D;;
 font-size: 1rem;
 font-weight: 400;
 line-height: 1.625rem; /* 162.5% */
@@ -148,6 +148,38 @@ margin-bottom: 1.5rem ;
 .input-container button{
   color: #fff;
   background-color: #ff5400;
+}
+
+
+ /* main section css */
+main{
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+
+/* popular tours  section */
+
+.popular-tours{
+  margin-top: 6.25rem;
+  justify-content: space-between;
+  gap: 3.31rem;
+}
+
+.popular-tours .primary-text{
+  margin: 1.5rem 0;
+}
+.popular-tours ul{
+  padding-left: 1rem;
+}
+.popular-tours ul li{
+  margin-bottom: 1.5rem;
+}
+
+.popular-tours .btn{
+  padding: 0.85rem 2.15rem;
+  margin-top: 2rem;
+  border: none;
 }
 
 
