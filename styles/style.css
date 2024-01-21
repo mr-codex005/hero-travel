@@ -127,6 +127,7 @@ margin-bottom: 1.5rem ;
   background: rgba(255, 255, 255, 0.30);
   padding: 1rem;
   border-radius: 0.5rem;
+  justify-content: space-around;
 }
 
 .input-container input,.input-container select, .input-container button{
@@ -138,7 +139,10 @@ margin-bottom: 1.5rem ;
   font-size: 1rem;
   font-weight: 700;
   padding: 1rem 0.6rem;
-  margin-left: 1  rem;
+}
+
+.input-container input{
+  width: 20%;
 }
 
 .input-container button{
@@ -174,7 +178,8 @@ margin-bottom: 1.5rem ;
 
 
   .input-container{
-    margin: o auto;
+    flex-direction: column;
+    justify-content: center;
   }
   .destination .container{
     padding: 2rem 1.5rem;
@@ -183,6 +188,9 @@ margin-bottom: 1.5rem ;
   .input-container input, .input-container select, .input-container button{
     width: 90%;
     margin: 1rem auto;
+  }
+  .input-container input{
+    width: 85%;
   }
 
 }
