@@ -13,10 +13,10 @@
   display: flex;
 }
 .primary-text {
-color: #5A5A5D;;
-font-size: 1rem;
-font-weight: 400;
-line-height: 1.625rem; /* 162.5% */
+  color: #5a5a5d;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625rem; /* 162.5% */
 }
 .main-title {
   color: #131318;
@@ -92,103 +92,193 @@ header ul li a:hover {
 
 /* destination section */
 .destination {
- background-image: url(../Images/Group\ 13\ \(1\)\ \(1\).png);
- background-position: center;
- background-size: cover;
- background-repeat: no-repeat;
- color: #fff;
- margin-top: 3rem;
- border-radius: 1rem;
- overflow: hidden;
+  background-image: url("../Images/Group\ 13\ \(1\)\ \(1\).png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  margin-top: 3rem;
+  border-radius: 1rem;
+  overflow: hidden;
 }
-.extra-container{
+.extra-container {
   background-image: linear-gradient(#131318ee, #13131800);
 }
 
-.destination .container{
+.destination .container {
   padding: 6.65rem 11.6rem;
 }
 
-.destination h2{
-font-size: 4rem;
-font-weight: 800;
-margin-bottom: 1.5rem ;
+.destination h2 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
 }
-.destination p{
+.destination p {
   color: #fff;
   margin-bottom: 3rem;
 }
 
-.destination .text-content{
-  text-align: center  ;
+.destination .text-content {
+  text-align: center;
 }
 
-.input-container{
-  background: rgba(255, 255, 255, 0.30);
+.input-container {
+  background: rgba(255, 255, 255, 0.3);
   padding: 1rem;
   border-radius: 0.5rem;
   justify-content: space-around;
 }
 
-.input-container input,.input-container select, .input-container button{
+.input-container input,
+.input-container select,
+.input-container button {
   width: 22.65%;
   border: none;
   outline: none;
   border-radius: 0.5rem;
-  color: rgba(19, 19, 24, 0.50);
+  color: rgba(19, 19, 24, 0.5);
   font-size: 1rem;
   font-weight: 700;
   padding: 1rem 0.6rem;
 }
 
-.input-container input{
+.input-container input {
   width: 20%;
 }
 
-.input-container button{
+.input-container button {
   color: #fff;
   background-color: #ff5400;
 }
 
-
- /* main section css */
-main{
+/* main section css */
+main {
   margin: 0 auto;
   max-width: 1170px;
 }
 
-
 /* popular tours  section */
 
-.popular-tours{
+.popular-tours {
   margin-top: 6.25rem;
   justify-content: space-between;
   gap: 3.31rem;
 }
 
-.popular-tours .primary-text{
+.popular-tours .primary-text {
   margin: 1.5rem 0;
 }
-.popular-tours ul{
+.popular-tours ul {
   padding-left: 1rem;
 }
-.popular-tours ul li{
+.popular-tours ul li {
   margin-bottom: 1.5rem;
 }
 
-.popular-tours .btn{
+.popular-tours .btn {
   padding: 0.85rem 2.15rem;
   margin-top: 2rem;
   border: none;
 }
 
+/* chose your destination section */
 
+.chose-destination {
+  margin-top: 6.35rem;
+}
 
+.chose-destination .primary-text {
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.chose-destination .text-container {
+  text-align: center;
+  padding: 0 16.44rem;
+}
+.img-box {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-box h3 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 800;
+  opacity: 0.8;
+}
+.chose-destination .img-container {
+  display: grid;
+  grid-template-columns: repeat(12, calc((16.2% - 24px) / 2));
+  grid-template-rows: repeat(3, 18.75rem);
+  gap: 1rem;
+}
+
+.box1 {
+  background-image: url("../Images/Rectangle 5.png");
+  grid-column-start: 1;
+  grid-column-end: 7;
+
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.box2 {
+  background-image: url("../Images/Rectangle 8.png");
+  grid-column-start: 7;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.box3 {
+  background-image: url("../Images/Rectangle 6.png");
+  grid-column-start: 1;
+  grid-column-end: 5;
+
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.box4 {
+  background-image: url("../Images/Rectangle\ 7.png");
+  grid-column-start: 5;
+  grid-column-end: 10;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.box5 {
+  background-image: url("../Images/Rectangle\ 9.png");
+  grid-column-start: 10;
+  grid-column-end: 13;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.box6 {
+  background-image: url("../Images/Rectangle\ 11.png");
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.box7 {
+  background-image: url("../Images/Rectangle\ 10.png");
+  grid-column-start: 6;
+  grid-column-end: 13;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
 
 /* responsive styles */
 
 @media screen and (max-width: 600px) {
-  header,main {
+  header,
+  main {
     padding: 1.2rem;
   }
 
@@ -208,28 +298,29 @@ main{
     display: block;
   }
 
-
-  .input-container,.popular-tours{
+  .input-container,
+  .popular-tours {
     flex-direction: column;
     justify-content: center;
   }
-  .destination .container{
+  .destination .container {
     padding: 2rem 1.5rem;
   }
 
-  .input-container input, .input-container select, .input-container button{
+  .input-container input,
+  .input-container select,
+  .input-container button {
     width: 90%;
     margin: 1rem auto;
   }
-  .input-container input{
+  .input-container input {
     width: 85%;
   }
 
-  .popular-tours img{
+  .popular-tours img {
     width: 100%;
   }
-  .popular-tours .btn{
+  .popular-tours .btn {
     margin-top: 0.5rem;
   }
-
 }
