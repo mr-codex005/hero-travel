@@ -13,10 +13,10 @@
   display: flex;
 }
 .primary-text {
-  color: rgba(19, 19, 24, 0.7);
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.625rem; /* 162.5% */
+color: rgba(19, 19, 24, 0.70);
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.625rem; /* 162.5% */
 }
 .main-title {
   color: #131318;
@@ -92,36 +92,69 @@ header ul li a:hover {
 
 /* destination section */
 .destination {
-  background-image: url(../Images/Group\13\\(1\)\\(1\).png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  margin-top: 3rem;
+ background-image: url(../Images/Group\ 13\ \(1\)\ \(1\).png);
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+ color: #fff;
+ margin-top: 3rem;
+ border-radius: 1rem;
+ overflow: hidden;
+}
+.extra-container{
+  background-image: linear-gradient(#131318ee, #13131800);
 }
 
-.destination .container {
-  padding: 6.63rem 11.56rem;
+.destination .container{
+  padding: 6.65rem 11.6rem;
 }
 
-.destination h2 {
-  font-size: 4rem;
-  font-weight: 800;
-  margin-bottom: 1.5rem;
+.destination h2{
+font-size: 4rem;
+font-weight: 800;
+margin-bottom: 1.5rem ;
 }
-.destination p {
+.destination p{
   color: #fff;
   margin-bottom: 3rem;
 }
 
-.destination .text-content {
-  text-align: center;
+.destination .text-content{
+  text-align: center  ;
 }
 
-.input-container {
+.input-container{
   border-radius: 0.5rem;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.30);
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+
+  padding: 1rem;
 }
+
+.input-container div{
+  width: 10.875rem;
+}
+
+.input-container input, .input-container select, .input-container button{
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  color: rgba(19, 19, 24, 0.50);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1rem 0.6rem;
+}
+
+.input-container button{
+  color: #fff;
+  background-color: #ff5400;
+}
+
+
+
 
 /* responsive styles */
 
@@ -145,4 +178,5 @@ header ul li a:hover {
   header nav .hamberger {
     display: block;
   }
+
 }
