@@ -1,6 +1,8 @@
 /* google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap");
+
 /* css reset */
 * {
   margin: 0;
@@ -39,6 +41,7 @@
   font-family: Mulish;
   font-size: 20px;
   font-weight: 800;
+  cursor: pointer;
 }
 
 /* main css */
@@ -362,13 +365,13 @@ main {
   gap: 1.5rem;
 }
 
-.newsletter .form-box{
-    border-radius: 1rem;
-border: 1px solid #FF5400;
-padding: 2.5rem;
+.newsletter .form-box {
+  border-radius: 1rem;
+  border: 1px solid #ff5400;
+  padding: 2.5rem;
 }
 
-.newsletter .primary-text{
+.newsletter .primary-text {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
 }
@@ -381,20 +384,77 @@ padding: 2.5rem;
   border: none;
   margin-top: 1.5rem;
 }
-.newsletter .btn{
+.newsletter .btn {
   padding: 0.88rem 10.2rem;
   border: none;
   margin-top: 1.5rem;
 }
-.newsletter hr{
-  background: rgba(19, 19, 24, 0.10);
+.newsletter hr {
+  background: rgba(19, 19, 24, 0.1);
+}
+
+/* footer section
+ */
+
+footer {
+  background: rgba(19, 19, 24, 0.05);
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 6.25rem;
+}
+
+footer .container {
+  padding: 6.87rem 20.9rem;
+}
+
+footer .logo {
+  align-items: center;
+  justify-content: center;
+}
+footer .logo img {
+  width: 2.5rem;
+  height: 2.91706rem;
+}
+footer .logo h2 {
+  color: #131318;
+  font-size: 2rem;
+  font-weight: 800;
+}
+footer .logo h2 span {
+  color: #ff5400;
+}
+
+footer .primary-text {
+  margin-top: 0.98rem;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+}
+footer .social a{
+  color: black;
+}
+footer .social i {
+  margin-left: 1.5rem;
+  font-size: 1.5rem;
+}
+
+footer hr {
+  margin-top: 3.12rem;
+  margin-bottom: 3.12rem;
+}
+
+.copyright {
+  color: #131318;
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 /* responsive styles */
 
 @media screen and (max-width: 600px) {
   header,
-  main {
+  main,
+  footer .container{
     padding: 1.2rem;
   }
 
@@ -474,22 +534,22 @@ padding: 2.5rem;
     margin-top: 1.5rem;
   }
 
-  .newsletter .form-box{
+  .newsletter .form-box {
     width: 75%;
   }
-  .newsletter input{
+  .newsletter input {
     padding: 1.5rem 3rem;
-}
+  }
 
-.newsletter .btn {
+  .newsletter .btn {
     padding: 1.5rem 5rem;
-}
+  }
 
-  .newsletter .img-box{
+  .newsletter .img-box {
     width: 100%;
   }
 
-  .newsletter .img-box img{
+  .newsletter .img-box img {
     width: 100%;
   }
 }
