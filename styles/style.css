@@ -362,11 +362,11 @@ main {
   .popular-tours .btn {
     margin-top: 0.5rem;
   }
-  .chose-destination .text-container {
+  .chose-destination .text-container, .choosing-reason .title {
     padding: 1rem;
   }
 
-  .chose-destination .img-container {
+  .chose-destination .img-container, .choosing-reason .cards {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -375,5 +375,12 @@ main {
   .chose-destination .img-box {
     height: 11rem;
     border-radius: 1rem;
+  }
+
+  .choosing-reason .card{
+    width: 80%;
+  }
+  .choosing-reason .cards{
+    margin-top: 1rem;
   }
 }
