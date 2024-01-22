@@ -313,6 +313,52 @@ main {
   background: rgba(233, 68, 68, 0.05);
 }
 
+/* video section  */
+.video-section{
+  margin-top: 6.25rem;
+  justify-content: space-between;
+}
+
+.video-section .primary-text{
+  margin-top: 1.5rem;
+}
+
+.video-section ul{
+  color: #131318;
+font-size: 1rem;
+font-weight: 700;
+line-height: 1.625rem; /* 162.5% */
+margin: 1.5rem;
+margin-right: 0;
+}
+.video-section ul li{
+  margin-top: 1rem;
+}
+
+.video-section .text-container, .video-section .video-container{
+  width: calc((100% - 1.75rem)/2);
+}
+.video-section .video-container video{
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.video-section .video-container h3{
+  font-size: 2rem;
+  font-weight: 800;
+
+}
+
+.video-section .btn{
+  border: none;
+  padding: 0.88rem 2.6rem;
+  margin-top: 2rem;
+}
+
+
+
+
+
+
 /* responsive styles */
 
 @media screen and (max-width: 600px) {
@@ -338,7 +384,9 @@ main {
   }
 
   .input-container,
-  .popular-tours {
+  .popular-tours,
+  .video-section
+  {
     flex-direction: column;
     justify-content: center;
   }
@@ -382,5 +430,13 @@ main {
   }
   .choosing-reason .cards{
     margin-top: 1rem;
+  }
+
+  .video-section .text-container, .video-section .video-container{
+    width: 100%;
+  }
+  .video-section .video-container video{
+    width: 100%;
+    margin-top: 1.5rem  ;
   }
 }
