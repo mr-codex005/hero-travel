@@ -327,43 +327,14 @@ main {
     padding: 1rem;
   }
 
-  .box1 {
-    grid-area: maldivs;
-  }
-  .box2 {
-    grid-area: indonesia;
-  }
-  .box3 {
-    grid-area: srilanka;
-  }
-  .box4 {
-    grid-area: north;
-  }
-  .box5 {
-    grid-area: kashmir;
-  }
-  .box6 {
-    grid-area: bangladesh;
-  }
-  .box7 {
-    grid-area: bandarban;
-  }
-  .img-box {
-    width: 20.9375rem;
-    height: 10.96206rem;
-    flex-shrink: 0;
+  .chose-destination .img-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
-  .chose-destination .img-container {
-    display: grid;
-    grid-template-areas:
-      "maldivs"
-      "indonesia"
-      "srilanka"
-      "north"
-      "kashmir"
-      "bangladesh"
-      "bandarban";
+  .chose-destination .img-box{
+    height: 11rem;
+    border-radius: 1rem;
   }
-  gap: 0;
 }
