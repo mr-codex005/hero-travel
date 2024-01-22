@@ -314,50 +314,81 @@ main {
 }
 
 /* video section  */
-.video-section{
+.video-section {
   margin-top: 6.25rem;
   justify-content: space-between;
 }
 
-.video-section .primary-text{
+.video-section .primary-text {
   margin-top: 1.5rem;
 }
 
-.video-section ul{
+.video-section ul {
   color: #131318;
-font-size: 1rem;
-font-weight: 700;
-line-height: 1.625rem; /* 162.5% */
-margin: 1.5rem;
-margin-right: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.625rem; /* 162.5% */
+  margin: 1.5rem;
+  margin-right: 0;
 }
-.video-section ul li{
+.video-section ul li {
   margin-top: 1rem;
 }
 
-.video-section .text-container, .video-section .video-container{
-  width: calc((100% - 1.75rem)/2);
+.video-section .text-container,
+.video-section .video-container {
+  width: calc((100% - 1.75rem) / 2);
 }
-.video-section .video-container video{
+.video-section .video-container video {
   border-radius: 1rem;
   overflow: hidden;
 }
-.video-section .video-container h3{
+.video-section .video-container h3 {
   font-size: 2rem;
   font-weight: 800;
-
 }
 
-.video-section .btn{
+.video-section .btn {
   border: none;
   padding: 0.88rem 2.6rem;
   margin-top: 2rem;
 }
 
+/* newsletter section */
 
+.newsletter {
+  justify-content: space-between;
+  margin-top: 6.25rem;
+  gap: 1.5rem;
+}
 
+.newsletter .form-box{
+    border-radius: 1rem;
+border: 1px solid #FF5400;
+padding: 2.5rem;
+}
 
+.newsletter .primary-text{
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
 
+.newsletter input {
+  padding: 1rem;
+  padding-right: 15.69rem;
+  border-radius: 0.5rem;
+  background: rgba(19, 19, 24, 0.05);
+  border: none;
+  margin-top: 1.5rem;
+}
+.newsletter .btn{
+  padding: 0.88rem 10.2rem;
+  border: none;
+  margin-top: 1.5rem;
+}
+.newsletter hr{
+  background: rgba(19, 19, 24, 0.10);
+}
 
 /* responsive styles */
 
@@ -385,8 +416,8 @@ margin-right: 0;
 
   .input-container,
   .popular-tours,
-  .video-section
-  {
+  .video-section,
+  .newsletter {
     flex-direction: column;
     justify-content: center;
   }
@@ -410,11 +441,13 @@ margin-right: 0;
   .popular-tours .btn {
     margin-top: 0.5rem;
   }
-  .chose-destination .text-container, .choosing-reason .title {
+  .chose-destination .text-container,
+  .choosing-reason .title {
     padding: 1rem;
   }
 
-  .chose-destination .img-container, .choosing-reason .cards {
+  .chose-destination .img-container,
+  .choosing-reason .cards {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -425,18 +458,38 @@ margin-right: 0;
     border-radius: 1rem;
   }
 
-  .choosing-reason .card{
+  .choosing-reason .card {
     width: 80%;
   }
-  .choosing-reason .cards{
+  .choosing-reason .cards {
     margin-top: 1rem;
   }
 
-  .video-section .text-container, .video-section .video-container{
+  .video-section .text-container,
+  .video-section .video-container {
     width: 100%;
   }
-  .video-section .video-container video{
+  .video-section .video-container video {
     width: 100%;
-    margin-top: 1.5rem  ;
+    margin-top: 1.5rem;
+  }
+
+  .newsletter .form-box{
+    width: 75%;
+  }
+  .newsletter input{
+    padding: 1.5rem 3rem;
+}
+
+.newsletter .btn {
+    padding: 1.5rem 5rem;
+}
+
+  .newsletter .img-box{
+    width: 100%;
+  }
+
+  .newsletter .img-box img{
+    width: 100%;
   }
 }
